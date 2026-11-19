@@ -19,7 +19,7 @@ Entries here are cleaned: no session ids, no names, no private projects, nothing
 - 2026-11-05 | negative | collaboration | "The numbers tell me nothing": items referred to by number without showing them | effect: none yet
 - 2026-11-05 | negative | process | Skills building skills feels "meta"; the levels blur when the plugin tests itself | effect: `/plugin-selftest`; the glossary's *subject*
 - 2026-11-06 | positive | pull requests | Drafting the pull request description together worked well; the summary on top is the manager's to write | effect: the standing instruction to start from log and diff and leave the summary to the person
-- 2026-11-06 | positive | glossary | Settling the vocabulary was great to clarify what we talk about; muddy words in, muddy outcomes out | effect: `GLOSSARY.md`; the debrief's language group; README item 13
+- 2026-11-06 | positive | glossary | Settling the vocabulary was great to clarify what we talk about; muddy words in, muddy outcomes out | effect: `GLOSSARY.md`; the debrief's language group; README item 14
 - 2026-11-06 | positive | glossary | Pushing back softly on muddy words ("I read X as …"): "You already do that, which is great" | effect: the standing instruction on ambiguous words
 - 2026-11-06 | negative | debrief | The debrief missed the agent's struggle with the levels of self-testing; it should ask the person, since the agent may be blind to it | effect: the debrief asks the person before writing findings
 - 2026-11-06 | negative | self-test | Unclear which skills a self-test used and what they covered | effect: topic 204; the eval suites and the coverage table (214)

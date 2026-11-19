@@ -100,9 +100,10 @@ Starting an agent session is onboarding a new employee that knows only the repos
 8. **Say when you are away**, and what to do meanwhile.
 9. **Challenge one lean per review**; give documents others build on thirty seconds: the unconfirmed items and two quotes.
 10. **Don't polish in advance; fix unwanted outcomes when you have a concrete example**, with its test. Security and safety are the exception: think them through before.
-11. **Prefer a check to a sentence**: a hook, a lint rule or a template field holds; a rule in a file is the fallback.
-12. **Debrief after each release**: while the final acceptance tests run, note thoughts for the debrief; push and merge; then debrief, best in a new session (the session that did the work tends to confirm itself; it may run the debrief if it says so). Its proposals go into the next release, so there is never "one more thing before the push".
-13. **Be clear and deliberate with words.** Muddy words in the prompt make muddy concepts, winding paths and muddy outcomes. When a term turns out to carry two meanings, settle it once in a glossary (`/mattpocock-skills:domain-modeling` does it with you, and fits well into a debrief); the agent then reads your words in the glossary's sense and says so when it is unsure.
+11. **Try before you shelve** (an option): before an idea goes to the backlog, ask whether a sub-agent could build a throwaway prototype now, outside the release and within a ceiling, for you to try. A backlog entry changes nothing until someone picks it up.
+12. **Prefer a check to a sentence**: a hook, a lint rule or a template field holds; a rule in a file is the fallback.
+13. **Debrief after each release**: while the final acceptance tests run, note thoughts for the debrief; push and merge; then debrief, best in a new session (the session that did the work tends to confirm itself; it may run the debrief if it says so). Its proposals go into the next release, so there is never "one more thing before the push".
+14. **Be clear and deliberate with words.** Muddy words in the prompt make muddy concepts, winding paths and muddy outcomes. When a term turns out to carry two meanings, settle it once in a glossary (`/mattpocock-skills:domain-modeling` does it with you, and fits well into a debrief); the agent then reads your words in the glossary's sense and says so when it is unsure.
 
 ### What you paste for the agent
 
