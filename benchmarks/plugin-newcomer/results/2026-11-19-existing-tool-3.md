@@ -1,4 +1,4 @@
-# Run 2026-11-19 (3): scenario existing-tool, commit `ff5c1c0` (the fixes of ledger 316), Opus, about 2 minutes
+# Run 2026-11-19 (3): scenario existing-tool, commit `a6cc5c4` (the fixes of ledger 316), Opus, about 2 minutes
 
 Confirming run for ledger 316, graded by the main session, not independent, and only on N56 and 316 (a) to (c); the full grading of this scenario is in `2026-11-19-existing-tool-2.md`. Usage of the tester (`usage.py agent-aa60d7c94742e4e87`): Output tokens, claude-opus-5-5 14,108 .
 

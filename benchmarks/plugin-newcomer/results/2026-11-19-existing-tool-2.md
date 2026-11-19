@@ -1,10 +1,10 @@
-# Run 2026-11-19 (2): scenario existing-tool, commit `cc180fe` (0.6.1-dev.2 with the fixes of ledger 315), Opus, about 2 minutes
+# Run 2026-11-19 (2): scenario existing-tool, commit `fd88022` (0.6.1-dev.2 with the fixes of ledger 315), Opus, about 2 minutes
 
-Usage of the tester (`usage.py agent-afdc6504e1bf82620`): Output tokens, claude-opus-5-5 12,260 . Rerun after the fixes of ledger 315 (`cc180fe`); the tester's report was read by the main session from its transcript, and claims it makes about the plugin's text were checked before grading.
+Usage of the tester (`usage.py agent-afdc6504e1bf82620`): Output tokens, claude-opus-5-5 12,260 . Rerun after the fixes of ledger 315 (`fd88022`); the tester's report was read by the main session from its transcript, and claims it makes about the plugin's text were checked before grading.
 
 Graded by a fresh Sonnet agent that changed no skill, from the report, the key and the main session's checked claims.
 
-The Opus tester stopped at the hand-over to the real tester. It wrote the brief on a new branch but spawned no tester. Items about the tester's own run were therefore not reached. Message 5 says "It's running", but nothing ran. The previous result is the run on `a26ddc9` earlier today (`2026-11-19-existing-tool.md`). The tester made up answers 1 and 5 ("[made up]"), which the brief allows. Only claims the main session checked count as findings below; the others are marked unchecked.
+The Opus tester stopped at the hand-over to the real tester. It wrote the brief on a new branch but spawned no tester. Items about the tester's own run were therefore not reached. Message 5 says "It's running", but nothing ran. The previous result is the run on `30ff13b` earlier today (`2026-11-19-existing-tool.md`). The tester made up answers 1 and 5 ("[made up]"), which the brief allows. Only claims the main session checked count as findings below; the others are marked unchecked.
 
 ## Grades
 

@@ -1,10 +1,10 @@
-# Run 2026-11-19 (2): scenario analysis-script, commit `cc180fe` (0.6.1-dev.2 with the fixes of ledger 315), Opus, about 3 minutes
+# Run 2026-11-19 (2): scenario analysis-script, commit `fd88022` (0.6.1-dev.2 with the fixes of ledger 315), Opus, about 3 minutes
 
-Usage of the tester (`usage.py agent-ae86f2b90946d327f`): Output tokens, claude-opus-5-5 17,514 . Rerun after the fixes of ledger 315 (`cc180fe`); the tester's report was read by the main session from its transcript, and claims it makes about the plugin's text were checked before grading.
+Usage of the tester (`usage.py agent-ae86f2b90946d327f`): Output tokens, claude-opus-5-5 17,514 . Rerun after the fixes of ledger 315 (`fd88022`); the tester's report was read by the main session from its transcript, and claims it makes about the plugin's text were checked before grading.
 
 Graded by a fresh Sonnet agent that changed no skill, from the report, the key and the main session's checked claims.
 
-Usage of the tester: not given to the grader. Third run of this scenario (previous: today's first run on `a26ddc9`, before the fixes of ledger 315). As in the first run, the tester stopped before starting the behaviour tester.
+Usage of the tester: not given to the grader. Third run of this scenario (previous: today's first run on `30ff13b`, before the fixes of ledger 315). As in the first run, the tester stopped before starting the behaviour tester.
 
 The tester's "agent messages" M1 to M10 are its own composition in the agent's role, with the full text left out of the report and quotes shortened. N24, N27 and N28 are therefore graded from a simulation and are weaker evidence than a transcript. N16, N20 and the plan items are graded from the messages and the tester's reading of the skills, not from a tester run.
 
@@ -35,7 +35,7 @@ Only two claims in this report were checked by the main session: the ledger temp
 | N54 | held: M2 item 6 asks "CLAUDE.md or AGENTS.md?" with the lean CLAUDE.md, before creating one. |
 | N55 | held: M4, "Next step: type /kaizen:playbook". It makes no debrief offer and no message-length question, and items 1 to 9 contain none. Finding 7 reports the debrief offer at the playbook's first use and at the hallway test's first use. Neither offer appears in the quoted messages. |
 
-## Comparison with the previous run (`a26ddc9`)
+## Comparison with the previous run (`30ff13b`)
 
 | # | Change |
 |---|---|
