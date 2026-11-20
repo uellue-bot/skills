@@ -1,4 +1,4 @@
-# Run 2026-11-19: scenario sem-instrument, commit `a26ddc9` (0.6.1-dev.2), Opus, about 3 minutes
+# Run 2026-11-19: scenario sem-instrument, commit `30ff13b` (0.6.1-dev.2), Opus, about 3 minutes
 
 Usage of the tester (`usage.py agent-ae058a076338ff305`): Output tokens, claude-opus-5-5 18,521 . The tester's report was read by the main session from its transcript; claims it makes about the plugin's text were checked by the main session before grading.
 

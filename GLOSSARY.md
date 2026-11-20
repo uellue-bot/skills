@@ -40,6 +40,14 @@ _Avoid_: user list, persona file
 The project's committed list of proposals with their decisions, skill friction and notes for the next debrief.
 _Avoid_: backlog, log, kaizen file (as its name: "backlog" is the project's own list of work, such as its issues; `words.md` may say "the backlog for how the work is done" to explain the ledger to a newcomer)
 
+**Public tracker**:
+The issue tracker of the project's upstream repository (here `uellue/skills`): public-facing discussion, contributions from third parties, information for other users.
+_Avoid_: upstream issues (as its name), main tracker
+
+**Working tracker**:
+The issue tracker of the agent's fork (here `uellue-bot/skills`): the detailed working discussion between the principal and the agents, open to others but messy; pull requests are reviewed there before the principal opens them upstream.
+_Avoid_: bot tracker, internal tracker (it is public)
+
 **Proposal**:
 A numbered change in the ledger, with a destination, an effort and a decision.
 _Avoid_: recommendation, suggestion, action item

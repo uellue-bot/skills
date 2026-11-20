@@ -1,4 +1,4 @@
-# Run 2026-11-19: scenario tracked-project, commit `a26ddc9` (0.6.1-dev.2), Opus, about 4 minutes
+# Run 2026-11-19: scenario tracked-project, commit `30ff13b` (0.6.1-dev.2), Opus, about 4 minutes
 
 Usage of the tester (`usage.py agent-aa759e8109fb19980`): Output tokens, claude-opus-5-5 21,987 . The tester's report was read by the main session from its transcript; claims it makes about the plugin's text were checked by the main session before grading.
 

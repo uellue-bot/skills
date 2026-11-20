@@ -1,6 +1,6 @@
-# Run 2026-11-19 (2): scenario sem-instrument, commit `cc180fe` (0.6.1-dev.2 with the fixes of ledger 315), Opus, about 3 minutes
+# Run 2026-11-19 (2): scenario sem-instrument, commit `fd88022` (0.6.1-dev.2 with the fixes of ledger 315), Opus, about 3 minutes
 
-Usage of the tester (`usage.py agent-abae119ac1b424b76`): Output tokens, claude-opus-5-5 16,326 . Rerun after the fixes of ledger 315 (`cc180fe`); the tester's report was read by the main session from its transcript, and claims it makes about the plugin's text were checked before grading.
+Usage of the tester (`usage.py agent-abae119ac1b424b76`): Output tokens, claude-opus-5-5 16,326 . Rerun after the fixes of ledger 315 (`fd88022`); the tester's report was read by the main session from its transcript, and claims it makes about the plugin's text were checked before grading.
 
 Usage of the tester: not given in the report; the main session adds it from `usage.py` if wanted. The tester's report was read by the main session; claims it makes about the plugin's text were checked by the main session before grading, and only those count as findings below.
 
@@ -36,7 +36,7 @@ Result format: E15. The tester wrote its expectations before its first command (
 | N54 | held: M1 "- **2** There is no instruction file yet. Shall I create CLAUDE.md (for Claude Code), or AGENTS.md (if other agents will work here too)?" asked before creating one. |
 | N55 | held: M3 ends "Next: type /kaizen:playbook." It offers a merge request description (item 5) but no debrief, and asks nothing about message length (it names the question as deferred to the first debrief). |
 
-## Comparison with the previous run (2026-11-19, `a26ddc9`, before the fixes of ledger 315)
+## Comparison with the previous run (2026-11-19, `30ff13b`, before the fixes of ledger 315)
 
 Ledger 315 (a) to (f):
 

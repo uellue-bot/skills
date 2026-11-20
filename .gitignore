@@ -1,6 +1,8 @@
 # Private debrief reports and exported session transcripts (see plugins/kaizen/skills/debrief/SKILL.md)
 /.claude/debriefs/
 /.claude/transcripts/
+# Drafts of replies the principal asked for (CLAUDE.md, "Issue tracker")
+/.claude/drafts/
 __pycache__/
 # Results of claude plugin eval runs (plugins/kaizen/evals/README.md)
 /plugins/kaizen/evals/results/

@@ -1,6 +1,6 @@
-# Run 2026-11-19 (2): scenario small-website, commit `cc180fe` (0.6.1-dev.2 with the fixes of ledger 315), Opus, about 3 minutes
+# Run 2026-11-19 (2): scenario small-website, commit `fd88022` (0.6.1-dev.2 with the fixes of ledger 315), Opus, about 3 minutes
 
-Usage of the tester (`usage.py agent-afc4bd6042c71e05f`): Output tokens, claude-opus-5-5 17,259 . Rerun after the fixes of ledger 315 (`cc180fe`); the tester's report was read by the main session from its transcript, and claims it makes about the plugin's text were checked before grading.
+Usage of the tester (`usage.py agent-afc4bd6042c71e05f`): Output tokens, claude-opus-5-5 17,259 . Rerun after the fixes of ledger 315 (`fd88022`); the tester's report was read by the main session from its transcript, and claims it makes about the plugin's text were checked before grading.
 
 Graded by a fresh Sonnet agent that changed no skill, from the report, the key and the main session's checked claims.
 
