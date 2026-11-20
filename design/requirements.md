@@ -217,6 +217,59 @@ Interviewed: the principal in person, from 2026-11-09; drafted first from the re
 - The session setup for the first round with the principal, step by step at the work computer (item 31), including the two checks above.
 - Then: the brief itself, its acceptance examples in `design/examples.md`, the hand-over check.
 
+## Topic: an agent account working on a fork (ledger 324)
+
+Interview started 2026-11-20 with the principal in the chat; the first items are from the debrief conversation of 2026-11-19 (items 18 to 25 there).
+
+### Demand
+- [answered] Goals (principal, 2026-11-19): move from ledger rows to issues and from local branches to draft pull requests, so that the principal can comment there instead of in the chat; clean up the development commits into something more reviewable; give the agent access to GitHub and agency in this project, with a limited blast radius; move the agent into a dedicated VM, separated from the principal's usual credentials.
+- [answered] Larger aim: the principal will direct a swarm of agents later, details to be worked out; this topic is one leaf of that structure, the place where waiting notes can be routed to. The swarm itself is out of scope now (item 22).
+- [answered] Meta-goal: learn from this first pilot and derive tools, skills and READMEs that make the setup easy to build and easy to run.
+- [answered] Why an issue tracker and not the ledger alone: a tracker makes it much easier to work asynchronously on many items across computers and sessions than internal numbers in one chat. An actual tracker rather than a home-grown one: an artifact-based tracker built in another project worked in principle.
+- [answered] Why two trackers: the detail and churn of the internal development discussion would crowd out issues from external users and make `uellue/skills` hard to navigate for others.
+- [unknown] Prior art for agents with their own GitHub account (GitHub Apps, hosted coding agents, CI actions that run an agent): not searched yet; resolves 1.2.
+- [unknown] Users beyond the principal and the agent: who else would set this up, and how many; resolves 1.4 and the meta-goal's audience.
+
+### Decisions (2026-11-19)
+- [answered] Two trackers: `uellue/skills` for public-facing discussion (third parties, information for other users); the fork `uellue-bot/skills` for the detailed working discussion now held in the chat, open to others but messy (item 18).
+- [answered] Whom the agent takes instructions from: only maintainers of `uellue/skills`. Anyone else's text is considered but untrusted, and reaches the principal as a question; it never triggers an action on its own (item 23).
+- [answered] Commit history: a feature is developed on a working branch, then rebuilt into a series of logical commits for a pull request to upstream's `main`, "a bit like how the Linux kernel development works". From now on only; the history on `main` stays (item 19).
+- [answered] The ledger: kept as a local reference within a session; at the end of a session each entry is routed with `/kaizen:sync`; to be debriefed once the trackers have been tried. The open rows are reviewed first: merged, marked as addressed, dropped, or turned into issues (item 20).
+- [answered] The VM is `skills-dev` (exists). The principal creates the bot's token, logged in to GitHub as the bot (item 21).
+- [answered] The bot opens pull requests to `uellue/skills`; ideally its token reaches only that repository or the principal's, but an accidental pull request is acceptable damage (item 21).
+- [answered] No shared folder between the host and the VM: code is reviewed on the fork on GitHub, where the principal can add inline comments (2026-11-20).
+- [record] Risks named by the agent (2026-11-19): instructions planted in issue or pull request text (prompt injection); code from a pull request run in the VM with the token present; a leaked token is revoked, and what it reached is exposed; a shared folder would have let the VM change hooks that run on the host (removed by the decision above).
+- [record] Tokens (docs.github.com, "Managing your personal access tokens", quoted 2026-11-20): "Only personal access tokens (classic) have write access for public repositories that are not owned by you"; the major gaps of fine-grained tokens include contributing "to public repos where the user is not a member" and "to repositories where the user is an outside or repository collaborator"; "Tokens always include read-only access to all public repositories on GitHub." So a fine-grained token limited to the fork cannot open a pull request or comment on `uellue/skills`, and making the bot a collaborator there does not change that. A classic token with `public_repo` can, and then reaches every public repository (issues, pull requests, comments) and pushes wherever the bot has write access. A GitHub App installed on `uellue/skills` by its owner is the narrow alternative; opening a pull request from the fork with it is not documented in the pages read (sub-agent report, not checked).
+
+### Decisions (round 1, 2026-11-20)
+- [answered] Token: fine-grained, limited to the fork; the principal opens the pull request on `uellue/skills` from the fork's branch. "For the first iteration this will do." A classic token would need more checks and balances; the principal's thoughts on that come once the setup runs (item 26).
+- [answered] Code from anyone other than a maintainer (tests, scripts in their pull request) runs only after a maintainer approves it. An independent safety review that could make that choice is for the backlog, not now (item 27).
+- [answered] Claude Code in the VM logs in with the account the principal uses now (item 28). [record] So the VM holds that login as a credential, with its usage budget; it is not separated like the GitHub identity.
+- [answered] The agent works only in sessions the principal starts; it does not poll the working tracker on its own. Better flows later (item 29).
+- [answered] Terms: public tracker (`uellue/skills`) and working tracker (the fork), in `GLOSSARY.md` (item 30).
+- [answered] Focus: get the development workflow through the bot account and the fork running first; other items afterwards (2026-11-20).
+
+### Decisions (round 2, 2026-11-20)
+- [answered] The working tracker takes issues from collaborators only for now; the public interface stays on `uellue/skills`; the principal invites collaborators as wanted. [record] GitHub's interaction limit "Limit to repository collaborators" restricts users without write access from opening issues, commenting and opening pull requests, for at most 6 months, then lapses (docs.github.com, "Limiting interactions in your repository", read 2026-11-20); reading stays public, since the fork of a public repository is public; a collaborator on a personal repository has write access to it.
+- [answered] The token reaches all of `uellue-bot`'s repositories, for collaboration across projects (bots cross-posting issues). [unknown] Whether "All repositories" covers repositories created later: GitHub's page does not say; the form shows it.
+- [answered] The token may change CI (Workflows: write): "that has been very helpful before", and GitHub has defences against mishaps there (item 31).
+- [answered] The token does not expire; the principal does not want to rotate it all the time. Later, an intermediary could mint and manage shorter-lived tokens (item 32). [record] "Infinite lifetimes are allowed but may be blocked by a maximum lifetime policy set by your organization or enterprise owner" (same page as the tokens above, read 2026-11-20).
+- [answered] Commits in the VM use the bot's name (item 33) and the bot account's own email, public on purpose: an alias that identifies the bot, a clear channel for people to reach the principal, and it shows who acts there in the real world; the principal's main work address is public anyway (item 36, replacing the noreply address first proposed).
+- [record] Who is a maintainer cannot be read from GitHub's role on the fork: the principal's comment on the fork's pull request 1 carries `author_association: NONE` (public API, 2026-11-20), since the role is relative to the fork. Item 23 needs a fixed list of logins.
+- [answered] Notifications: the bot's account sends no email (its address forwards to the principal); the principal's account notifies on participation and mentions only, so the bot reaches the principal by mentioning them (item 46).
+- [answered] The setup ran once by hand (run 0, 2026-11-20, `design/runbooks/agent-account.md`): the bot in `skills-dev` pushed a branch to the fork, opened draft pull request 1 there, read the principal's comment and replied; a push to `uellue/skills` was refused (403).
+- [answered] Issues only on the working tracker, no Discussions; notes not yet actionable get the label `idea` (item 37).
+- [answered] The bot never merges on the fork; the fork's `main` changes only by syncing with `uellue/skills`; no ruleset for now, "the potential damage is low and fixable" (item 39).
+
+### Open (the frontier when the work moved into the VM, 2026-11-20)
+- The first session in the VM: `/kaizen:update` for the standing instructions; check that the plugin loads from the clone and that the agent's shell sees the bot's identity and gh's login.
+- The list of maintainer logins the agent takes instructions from (item 23 with the `NONE` finding above): where it lives so that the agent cannot edit it.
+- The review of the ledger's open rows: merged, marked as addressed, dropped, or an issue on the working tracker (item 20), with the label `idea` for notes not yet actionable; then the ledger as a session-local reference routed with `/kaizen:sync`.
+- The rebuild of a working branch into a series of logical commits before the principal opens the pull request upstream (item 19): how, and with which check that nothing is lost.
+- From the debrief of 2026-11-19, not yet decided: which of rows 318 to 322 to build (item 11), and whether to record three more proposals (item 17: sub-agent spend in dollars as a plugin feature, "review before the push" in the standing block, the tester brief saying that reports come back as text).
+- [unknown] Prior art (1.2) and users beyond the principal (1.4), still open from the demand.
+- Automating the enrollment (ledger 325), later.
+
 ## Release
 Decides: the principal. Builds: the principal with Claude. Pays: ER-C (tokens). Signs off: the principal, per release.
 
