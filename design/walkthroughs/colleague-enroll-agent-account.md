@@ -1,6 +1,6 @@
 # Walk-through: a modama colleague enrolls an agent account in a fresh devvm VM
 
-Persona: a colleague enrolling an agent account in a VM (`design/stakeholders.md`): a modama developer who knows devvm, sets up a fresh VM for `modama-rdm/modama` so that an agent works there through a bot account; three variants of the account (principal, 2026-11-20): **A** an existing bot with forks of its own (as `uellue-bot`); **B** a bot account the colleague creates first, possibly working on the colleague's personal forks; **C** an existing account working on a repository of an organisation it does not own. Ends when the agent in the VM has pushed a branch and opened a draft pull request (principal, 2026-11-20). Confidence: simulated, walked on paper by the agent; nothing was run.
+Persona: a colleague enrolling an agent account in a VM (`design/stakeholders.md`): a modama developer who knows devvm, sets up a fresh VM for `modama-rdm/modama` so that an agent works there through a bot account; three variants of the account (principal, 2026-11-20): **A** an existing bot with forks of its own (as `uellue-bot`); **B** a bot account the colleague creates first, possibly working on the colleague's personal forks; **C** an existing account working on a repository of an organisation it does not own. Ends when the agent in the VM has pushed a branch and opened a draft pull request (principal, 2026-11-20). Confidence: simulated, walked on paper by the agent; nothing was run. Questions answered by the principal, 2026-11-20.
 What exists: `design/requirements.md`, topic ledger 324 with "Enrollment" (round 3); `design/runbooks/agent-account.md` (run 0, done by hand); devvm at `2649ab5` (README, `design/spec.md`, `design/requirements.md`, `guest/setup-dev.sh`, `cmd_setup_dev`); `modama-rdm/modama` on GitHub (public, default branch `master`, Issues on; read 2026-11-20). `devvm setup-bot` does not exist; the walk imagines the colleague meeting it as the requirements describe it.
 
 ## Steps
@@ -44,9 +44,16 @@ The colleague wants an agent that works on modama in a VM they can throw away, w
 - **Q7** (step 7) Does `setup-dev` install the current gh for everyone (the "devvm configuration with every dependency"), or only `setup-bot`?
 - **Q8** (step 2) Is a bot account per colleague what GitHub's terms allow, and is it what ER-C wants?
 
-## Answers from the principal
+## Answers from the principal (2026-11-20, in review threads on pull request 2 of the working tracker)
 
-None yet.
+- **Q1** A first; B and C kept in mind, to be added before `setup-bot` is released in devvm.
+- **Q2** A coached browser step for now. Considered: an "authorized officer" role that controls a token with more scope for such actions and acts as an independent reviewer of whether a request makes sense and is in line with the policies and processes still to be developed.
+- **Q3** A `create` option, not only an environment variable; with documentation and helpful messages from the tool; "hallway test with impatient persona later".
+- **Q4** Like the Claude token (one per bot, in a file on the host). Mind that several tokens for several accounts, repositories and roles must be managed (Q1, Q2). Asked: can tokens configured with gh or git be used, one per repository or account, so that their configuration is not replicated and users can reuse and manage tokens independently? Research started.
+- **Q5** Yes, and further: devvm does not depend on holding upstream credentials, and lets the operator work without exposing them.
+- **Q6** Ask the user whether and how to check; for example, optionally a canary repository where write access should not work. "Should be simple."
+- **Q7** A current gh is generally useful: devvm installs it from GitHub's own repository in every VM, by default.
+- **Q8** No problems so far; other projects use bots extensively (conda-forge, JOSS); the bot says that it is one and who controls it, the principal is reachable through many channels and works to keep it from breaking things or annoying people. Asked: research how to do it properly and what the policy is. Research started.
 
 ## Gaps
 
