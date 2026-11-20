@@ -261,14 +261,23 @@ Interview started 2026-11-20 with the principal in the chat; the first items are
 - [answered] Issues only on the working tracker, no Discussions; notes not yet actionable get the label `idea` (item 37).
 - [answered] The bot never merges on the fork; the fork's `main` changes only by syncing with `uellue/skills`; no ruleset for now, "the potential damage is low and fixable" (item 39).
 
+### Enrollment (round 3, 2026-11-20, in the VM; ledger 325)
+- [answered] The enrollment is automated now, not later: "Setting you up in a devvm with everything necessary to work on uellue-bot forks was a bit of a hassle. That will be necessary in the future for other forks, and for this fork potentially in other VMs on other machines" (principal).
+- [answered] Two steps: a devvm configuration with every dependency (a current `gh`, the recommended plugins); then `devvm setup-bot` enrolls "some form of upstream agency in a VM", with a script that guides the principal through the setup (which account, confirm the right fork, create the token, add it in the VM, test that everything works, set notifications); then the Claude Code and plugin setup as in this session (`/kaizen:update`).
+- [answered] GitHub forks first; GitLab forks and plain git remotes may follow (`modama-rdm/modama` moved from GitLab to GitHub, so both are at hand, but there is no bot credential on the GitLab server).
+- [answered] Only a fresh VM that went through devvm's recommended setup; a previously used VM is out of scope.
+- [answered] Browser work only where there is no API, coached by the script; the principal expected the token alone. [unknown] Whether creating the fork, turning on its Issues and its interaction limit need the token's Administration permission (left off in run 0), and whether the bot's notification settings have an API: to check against GitHub's documentation.
+- [answered] `devvm setup-bot` belongs in devvm, the principal's other project; first trial: the principal forks devvm as `uellue-bot/devvm`, and the agent develops on that fork from the VM.
+- [answered] Walk-through first: a modama colleague who knows devvm sets up a VM for `modama-rdm/modama` with the bot.
+
 ### Open (the frontier when the work moved into the VM, 2026-11-20)
-- The first session in the VM: `/kaizen:update` for the standing instructions; check that the plugin loads from the clone and that the agent's shell sees the bot's identity and gh's login.
+- The first session in the VM: `/kaizen:update` for the standing instructions (done 2026-11-20: the block imported into `CLAUDE.md`, the tracker setting written); check that the plugin loads from the clone and that the agent's shell sees the bot's identity and gh's login (gh and git: checked the same day).
 - The list of maintainer logins the agent takes instructions from (item 23 with the `NONE` finding above): where it lives so that the agent cannot edit it.
 - The review of the ledger's open rows: merged, marked as addressed, dropped, or an issue on the working tracker (item 20), with the label `idea` for notes not yet actionable; then the ledger as a session-local reference routed with `/kaizen:sync`.
 - The rebuild of a working branch into a series of logical commits before the principal opens the pull request upstream (item 19): how, and with which check that nothing is lost.
 - From the debrief of 2026-11-19, not yet decided: which of rows 318 to 322 to build (item 11), and whether to record three more proposals (item 17: sub-agent spend in dollars as a plugin feature, "review before the push" in the standing block, the tester brief saying that reports come back as text).
 - [unknown] Prior art (1.2) and users beyond the principal (1.4), still open from the demand.
-- Automating the enrollment (ledger 325), later.
+- Automating the enrollment (ledger 325): now, see "Enrollment" above.
 
 ## Release
 Decides: the principal. Builds: the principal with Claude. Pays: ER-C (tokens). Signs off: the principal, per release.

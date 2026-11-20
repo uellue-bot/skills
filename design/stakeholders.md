@@ -65,3 +65,11 @@ Knows: their project, its services and the test machine (and is empowered on it)
 Has: the project's checkout in a devvm VM, the test machine, the plugin installed at user scope.
 Never reads: a runbook longer than the steps it needs; anything here about how the field test "should" go.
 Confidence: interview (the principal, 2026-11-10, as the developer of another project; walk-through `design/walkthroughs/developer-field-test-own-tool.md`).
+
+## A colleague enrolling an agent account in a VM
+
+Who: a modama developer at ER-C who has used devvm (`devvm create`, `setup-dev`, `ssh`) and Claude Code in it, with a GitHub account in `modama-rdm`.
+Wants: a fresh VM where an agent works on `modama-rdm/modama` through a bot account, without the colleague's own credentials in the VM. The account is one of three (principal, 2026-11-20): an existing bot with forks of its own; a bot account the colleague creates first, possibly working on the colleague's personal forks rather than the bot's; or an existing account working on a repository of an organisation the bot does not own.
+Knows: devvm, git, GitHub's web pages; not run 0 (`design/runbooks/agent-account.md`), not fine-grained tokens, not this repository.
+Has: devvm on their host, a browser logged in to their own account.
+Confidence: simulated (the principal named the role and confirmed the entry, 2026-11-20; walk-through `design/walkthroughs/colleague-enroll-agent-account.md`).
