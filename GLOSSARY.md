@@ -52,6 +52,10 @@ _Avoid_: bot tracker, internal tracker (it is public)
 One strand of work with its own goal, state, open questions and approvals, running in parallel with others; tracked in one or more issues and worked by one or more sessions or agents (`design/requirements-workstreams.md`).
 _Avoid_: thread (GitHub's review threads), line of work, track (too close to "tracker")
 
+**Werkstatt**:
+The whole organisation one manager directs: the manager, their agents and sessions, the workstreams, and the set-up that links them (labels, timers, hooks, settings); also the name of the repository that holds that set-up (`design/architecture-workstreams.md`). From the master's workshop: several pieces on the benches at once, each at its own pace, and nothing leaves without the master's sign-off. Each manager runs their own.
+_Avoid_: swarm, orchestra, agent organisation (the word of the 2026-11-16 record), workshop (reads as a training event)
+
 **Proposal**:
 A numbered change in the ledger, with a destination, an effort and a decision.
 _Avoid_: recommendation, suggestion, action item
