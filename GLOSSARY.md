@@ -48,6 +48,10 @@ _Avoid_: upstream issues (as its name), main tracker
 The issue tracker of the agent's fork (here `uellue-bot/skills`): the detailed working discussion between the principal and the agents, open to others but messy; pull requests are reviewed there before the principal opens them upstream.
 _Avoid_: bot tracker, internal tracker (it is public)
 
+**Workstream**:
+One strand of work with its own goal, state, open questions and approvals, running in parallel with others; tracked in one or more issues and worked by one or more sessions or agents (`design/requirements-workstreams.md`).
+_Avoid_: thread (GitHub's review threads), line of work, track (too close to "tracker")
+
 **Proposal**:
 A numbered change in the ledger, with a destination, an effort and a decision.
 _Avoid_: recommendation, suggestion, action item
