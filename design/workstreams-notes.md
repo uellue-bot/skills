@@ -12,7 +12,7 @@ The one-page state of the topic, for the next session to read first (N34). Updat
 
 - Requirements done and read back with the principal; acceptance examples E58, E60 to E66.
 - Next step: a coarse architecture. Its first question is N29, where things live: not "a monstrous monorepo", but a structure that fosters development, testing, maintenance, collaboration and reuse. The "things" are the method (kaizen's skills), the tooling to be built (inbox and routing, the morning view, the authorised officer, the credential manager setup), each project's records, the principal's portfolio, and shared know-how such as the prior-art library for the reuse check (N37). The routing of 2026-11-16 (R1 to R16) is an input, reopened.
-- The principle for the architecture (N47): existing tools wherever possible, linked together; "Not cook a whole lot of code." Every piece of code of our own names why no tool does it.
+- The principle for the architecture (N47): existing tools wherever possible, linked together; "Not cook a whole lot of code." Every piece of code of our own names why no tool does it, and an adversarial fresh agent challenges that claim before the code is written.
 
 ## Open, with who answers
 
