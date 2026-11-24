@@ -111,7 +111,7 @@ Acceptance examples: E58, E60 to E66 in `design/examples.md`.
 - [unknown] Whether LiberTEM's repositories count as "spaces that we control" (N7 amended), where bot replies (U7.2) may be posted directly. Resolves: the principal with the co-maintainers.
 - [unknown] Whether a "clean" environment, such as a GUI in a remote desktop session, can replace reviewing what leaves the screen (N25). Resolves: the security analysis.
 - [unknown] Who else adopts the tooling, and with which work styles (N14). Resolves: the modama colleague's first try.
-- [record] The Claude Code features the prior art points to are moving: agent view "is in research preview", agent teams are experimental (`multi-agent-prior-art.md`). Resolves: a check with `claude-code-guide` at the architecture step.
+- [record] The Claude Code features the prior art points to are moving: agent view "is in research preview", agent teams are experimental (`multi-agent-prior-art.md`). Checked 2026-11-24 with `claude-code-guide`: `design/research/claude-code-features.md` (agent view still a research preview, agent teams still experimental); the needs set against it and other existing tools in `design/research/workstreams-tools.md`.
 - [deferred] What the Team plan allows (2.9); the security analysis (2.11); where things live (N29, 2.8).
 
 ### 2.3 Interfaces with existing systems
