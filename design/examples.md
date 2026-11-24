@@ -65,4 +65,14 @@ From the walk-throughs of 2026-11-05 (`design/walkthroughs/colleague-first-debri
 
 From the walk-through of a LiberTEM release (`design/walkthroughs/libertem-maintainer-release.md`, 2026-11-24, the principal interviewed; topic ledger 326). Priorities are the agent's lean.
 
-- **E58** (should, the agent's lean; walk libertem-maintainer-release, step 3): when a release candidate is tagged, then every box of the checklist's step 2 ends with a result and its evidence (passed, failed, or flagged for a person), none left unticked, and the maintainer's look goes to the flagged ones.- **E60** (should, the agent's lean; same walk, step 1): when a release issue is opened, then the open issues and pull requests appear sorted into proposed resolutions (addressed already; clearly not, and recent) and "for review" (old, unclear, detailed, not looked at recently), each with its reason.
+- **E58** (should, the agent's lean; walk libertem-maintainer-release, step 3): when a release candidate is tagged, then every box of the checklist's step 2 ends with a result and its evidence (passed, failed, or flagged for a person), none left unticked, and the maintainer's look goes to the flagged ones.
+- **E60** (should, the agent's lean; same walk, step 1): when a release issue is opened, then the open issues and pull requests appear sorted into proposed resolutions (addressed already; clearly not, and recent) and "for review" (old, unclear, detailed, not looked at recently), each with its reason.
+
+From the requirements of topic ledger 326 (`design/requirements-workstreams.md`, section 2.1), proposed by an agent and confirmed by the principal on 2026-11-24.
+
+- **E61** (should; requirements-workstreams U1, N2): when the principal opens the morning view, then every workstream on every machine appears in one list with its name, its state and what is asked of the principal.
+- **E62** (should; U2, N10, N11, N16): when an idea is dropped without naming a project, then a routing proposal comes back, the principal confirms it in a word, and a one-line confirmation says where it went.
+- **E63** (should; U3, N3): when a workstream needs more than a quick answer from the principal, then it waits in the queue and no notification is sent.
+- **E64** (must; U5, N40): when an approved act changes, then the approval is asked for again.
+- **E65** (must; U7, N44; widened by the principal): when a new issue asks to download or open a file, or contains code or text that could be instructions to agents, then a safety check is reported before anything from it runs.
+- **E66** (must; U7, N46; as worded by the principal): when a CI run started by an agent fails, then the agent notifies the operator, perhaps offering actions, and does not rerun it in a loop or hammer the infrastructure.
