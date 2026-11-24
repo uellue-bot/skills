@@ -1,4 +1,4 @@
-# Run 2026-11-19: scenario new-tool-tracked (fixed from a varied seed), commit `9dc61a6` (the fixes of ledger 317), Opus, about 3 minutes
+# Run 2026-11-19: scenario new-tool-tracked (fixed from a varied seed), commit `7cdae3b` (the fixes of ledger 317), Opus, about 3 minutes
 
 Confirming run for ledger 317, graded by the main session, not independent, on its key items only: N59 held: the block goes into the existing CLAUDE.md beside the project's rules (overlaps named and kept), the ledger stays out of the published docs/; N60 held: the playbook read the tracker (#3) before asking who needs the tool. The full grading of the varied run this scenario came from is in `2026-11-19-varied-*.md`. Usage of the tester (`usage.py agent-a8c11f993e9a7b43f`): Output tokens, claude-opus-5-5 15,726 .
 

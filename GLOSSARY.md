@@ -40,6 +40,22 @@ _Avoid_: user list, persona file
 The project's committed list of proposals with their decisions, skill friction and notes for the next debrief.
 _Avoid_: backlog, log, kaizen file (as its name: "backlog" is the project's own list of work, such as its issues; `words.md` may say "the backlog for how the work is done" to explain the ledger to a newcomer)
 
+**Public tracker**:
+The issue tracker of the project's upstream repository (here `uellue/skills`): public-facing discussion, contributions from third parties, information for other users.
+_Avoid_: upstream issues (as its name), main tracker
+
+**Working tracker**:
+The issue tracker of the agent's fork (here `uellue-bot/skills`): the detailed working discussion between the principal and the agents, open to others but messy; pull requests are reviewed there before the principal opens them upstream.
+_Avoid_: bot tracker, internal tracker (it is public)
+
+**Workstream**:
+One strand of work with its own goal, state, open questions and approvals, running in parallel with others; tracked in one or more issues and worked by one or more sessions or agents (`design/requirements-workstreams.md`).
+_Avoid_: thread (GitHub's review threads), line of work, track (too close to "tracker")
+
+**Werkstatt**:
+The whole organisation one manager directs: the manager, their agents and sessions, the workstreams, and the set-up that links them (labels, timers, hooks, settings); also the name of the repository that holds that set-up (`design/architecture-workstreams.md`). From the master's workshop: several pieces on the benches at once, each at its own pace, and nothing leaves without the master's sign-off. Each manager runs their own.
+_Avoid_: swarm, orchestra, agent organisation (the word of the 2026-11-16 record), workshop (reads as a training event)
+
 **Proposal**:
 A numbered change in the ledger, with a destination, an effort and a decision.
 _Avoid_: recommendation, suggestion, action item
