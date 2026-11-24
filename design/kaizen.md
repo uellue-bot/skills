@@ -262,6 +262,8 @@ Unresolved lines only; the resolved ones are in the archive with what fixed them
 - 2026-11-19, debrief (a fresh session on one stretch of a week-long session): the skill names no way to cite a part of a session to a reader; the reader was given file lines of the rendering by hand.
 - 2026-11-20, update (the plugin's own repository, first session in the VM, block only in `~/.claude/CLAUDE.md`): `version.py --project` said "nothing older found" instead of naming the copy in the home folder, and neither the skill nor the script knows a block brought in by an `@` import, which the principal chose so that the block in use is the one under development.
 - 2026-11-20, walkthrough (an enrollment of an agent account in devvm, persona simulated): the skill offers a document to send when the stakeholder is not in the room; the principal answered best in a pull-request review with one inline thread per question, a channel the skill does not name.
+- 2026-11-24, requirements (topic ledger 326, drafted from the record): "check what is already known" names this project's records only; a draft on the same topic in another of the principal's repositories (`uellue/modama`, branch `crawler`, `working-with-agents.md`, 2026-11-16) was found only halfway through the interview, after the trackers, the repository and a web search.
+- 2026-11-24, walkthrough (the principal's day managing agents, then a LiberTEM release): the skill walks one process forward; what worked was a pair, the principal telling the day as it is now in their own words (numbered annoyances and what works), then a walk of how it could be with needs as leans per step; the skill does not describe either.
 
 ## Notes for the next debrief
 

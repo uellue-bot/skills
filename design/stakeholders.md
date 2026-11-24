@@ -73,3 +73,12 @@ Wants: a fresh VM where an agent works on `modama-rdm/modama` through a bot acco
 Knows: devvm, git, GitHub's web pages; not run 0 (`design/runbooks/agent-account.md`), not fine-grained tokens, not this repository.
 Has: devvm on their host, a browser logged in to their own account.
 Confidence: simulated (the principal named the role and confirmed the entry, 2026-11-20; walk-through `design/walkthroughs/colleague-enroll-agent-account.md`).
+
+## The LiberTEM maintainer
+
+Who: the principal in their role as a maintainer of `LiberTEM/LiberTEM`, an open-source project with co-maintainers and outside contributors, released to GitHub, PyPI, ghcr.io, Zenodo and conda-forge.
+Wants: releases and routine maintenance with less of their own time, more of it automated or delegated to agents, without risk to users or the supply chain.
+Knows: the project, its release checklist (`docs/source/releasing.rst`), `scripts/release`, its CI (GitHub Actions, Azure DevOps), the conda-forge feedstock.
+Has: the maintainer's rights on GitHub, PyPI's release pipeline, Zenodo; hardware for slow and CUDA tests; the institute's publication database.
+Works with: co-maintainers and contributors (simulated in walks until one is asked); conda-forge's bots on the feedstock.
+Confidence: interviewed (the principal, 2026-11-24; walk-through `design/walkthroughs/libertem-maintainer-release.md`).
