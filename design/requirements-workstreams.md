@@ -115,6 +115,7 @@ Acceptance examples: E58, E60 to E66 in `design/examples.md`.
 - [deferred] What the Team plan allows (2.9); the security analysis (2.11); where things live (N29, 2.8).
 
 ### 2.3 Interfaces with existing systems
+- [answered] Existing tools wherever possible, linked together "in a smart way. Not cook a whole lot of code." (N47; principal, 2026-11-24). It applies to every section: the architecture starts from what exists (Claude Code's own features, GitHub, gh, devvm, Quarterdeck-like plugins) and names each piece of code of our own with the reason no tool does it.
 - [record] GitHub, outside our control: the working tracker and the public tracker, the principal's repositories, organisations' repositories (`LiberTEM/LiberTEM`, `conda-forge/libertem-feedstock`, upstream projects such as `hyperspy/rosettasciio`); issues, pull requests, labels, Actions, dependabot; the bot account as identity, with only the principal's text counting (1.2). GitLab too for review [answered] (W4).
 - [record] CI beyond GitHub: Azure DevOps for the full pipeline, a dedicated CI machine for heavy runs, LiberTEM's VM, a devcontainer for CUDA, Windows on request (release walk; N46).
 - [record] Release targets, outside our control: PyPI, ghcr.io, Zenodo, conda-forge and its bots, the institute's publication database, the announcement mail; failures seen were "upstream services misbehaving or not being available" and errors swallowed (release walk, principal).
