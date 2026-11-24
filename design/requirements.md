@@ -281,7 +281,7 @@ Interview started 2026-11-20 with the principal in the chat; the first items are
 - The rebuild of a working branch into a series of logical commits before the principal opens the pull request upstream (item 19): how, and with which check that nothing is lost.
 - From the debrief of 2026-11-19, not yet decided: which of rows 318 to 322 to build (item 11), and whether to record three more proposals (item 17: sub-agent spend in dollars as a plugin feature, "review before the push" in the standing block, the tester brief saying that reports come back as text).
 - [unknown] Prior art (1.2) and users beyond the principal (1.4), still open from the demand.
-- Automating the enrollment (ledger 325): now, see "Enrollment" above.
+- Automating the enrollment (ledger 325), see "Enrollment" above: paused 2026-11-24 for other work that may change how devvm is developed. Next: the principal forks devvm as `uellue-bot/devvm`; a new session in its clone builds variant A of `setup-bot` (E52 to E57), with gh from GitHub's repository in every VM and a `create` option for the bot VM. This VM (`skills-dev`) has `/dev/kvm`, 8 CPUs, 15 GB RAM, 73 GB free, so devvm can be tested here.
 
 ## Release
 Decides: the principal. Builds: the principal with Claude. Pays: ER-C (tokens). Signs off: the principal, per release.
