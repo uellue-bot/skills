@@ -17,6 +17,7 @@ The one-page state of the topic, for the next session to read first (N34). Updat
 
 - Who does the security analysis, and when (A16, N20, N25, N41, N43): the principal; it gates anything that posts on GitHub or holds credentials.
 - The next interview round: consequences of failure, network and accounts, lifetime, the end-of-day view (open questions in the requirements).
+- The branch: this topic's commits sit on `kaizen-0.6.2`, the head of the working tracker's draft pull request #2 (enrollment); cleaned up as part of resolving N29 (principal, 2026-11-24).
 - Deferred: what the ER-C Team plan allows (its admin, once the design names features); LiberTEM's co-maintainers, with concrete cases, once a trial is near; other people's projects (public tracker #18).
 
 ## How the principal likes to work on this
